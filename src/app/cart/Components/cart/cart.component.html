@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-6 col-sm-12" >
+      <ng-container *ngFor="let item of Cartproducts; let index=index">
+        <div class="card mb-3" style="max-width: 540px;margin:20px 0 24px 0"  >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{{item.product.url}}" class="img-fluid rounded-start" alt="..." style="height: 220px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{item.product.name}}</h5>
+                <p class="card-text">{{item.product.price}}</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <div class="d-flex">
+                  <div class="d-flex w-50 justify-content-between">
+                      <p class="card-text">Amount :</p>
+                    <input type="number" class="form-control w-50" [(ngModel)]="item.count" (change)="DetectChenges()">
+                  </div>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-danger" (click)="deletePro(index)">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <app-form [Total]="TotalPrice"></app-form>
+    </div>
+    <div class=" col-sm-12">
+        <h5 class="card-title">Tolal Price :{{TotalPrice}}</h5>
+    </div>
+</div>
+

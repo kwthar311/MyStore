@@ -1,0 +1,10 @@
+<!-- <ng-container *ngFor="let item of products">
+  {{item.name}}
+</ng-container> -->
+
+<div class="row">
+  <div class="col-md-4 col-sm-12 " *ngFor="let product of products">
+   <app-product [item]="product" (SelectedProduct)="FuncAddToCart($event)" ></app-product>
+  </div>
+</div>
+

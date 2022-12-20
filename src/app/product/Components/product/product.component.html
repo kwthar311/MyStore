@@ -1,0 +1,30 @@
+<div class="card" style="width:20rem;margin:20px 0 24px 0">
+    <img class="card-img-top" src="{{item.url}}" alt="image" style="width:100%" routerLink="/details/{{item.id}}">
+    <div class="card-body">
+      <h4 class="card-title">{{item.name}}</h4>
+      <p class="card-text">{{item.description}}</p>
+    <div class="d-flex">
+      <div class="d-flex w-50 justify-content-between">
+        <!-- <input type="number" class="form-control w-50" [(ngModel)]="Count"> -->
+        <div class="mb-3">
+          <!-- <label for="" class="form-label">City</label> -->
+          <select class="form-select form-select-lg" name="" id="" [(ngModel)]="Count">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <button  class="btn btn-primary" (click)="Add()">Add</button>
+      </div>
+      <div><span class="badge bg-info">{{item.price | currency}}</span></div>
+    </div>
+
+    </div>
+  </div>
