@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from 'src/app/cart/Services/cart.service';
 import { ProductService } from '../../Services/product.service';
 
 @Component({
@@ -14,7 +15,7 @@ Count:number=1;
 pro:any=<any>{};
 CartP:any[]=[]
 item:any=<any>{};
-  constructor( private service:ProductService ,private route:ActivatedRoute) {
+  constructor( private service:ProductService ,private route:ActivatedRoute ,private cartservice:CartService) {
 
   }
   ngOnInit(): void {
@@ -25,22 +26,7 @@ item:any=<any>{};
 
   Add(){
     this.item={product:this.pro,count:this.Count}
-    if("cart" in localStorage){
-      this.CartP =JSON.parse(localStorage.getItem("cart")!)
-      let existFlag=this.CartP.find(pro=>pro.product.id==this.item.product.id)
-      if(existFlag){
-        alert("This Product is already exist!")
-      }else{
-        this.CartP.push(this.item)
-      localStorage.setItem("cart",JSON.stringify(this.CartP))
-      alert("This Product added to cart successfully!")
-      }
-
-    }else{
-      this.CartP.push(this.item)
-      localStorage.setItem("cart",JSON.stringify(this.CartP))
-      alert("This Product added to cart successfully!")
-    }
+    this.cartservice.AddToCart(this.item)
   }
 
 

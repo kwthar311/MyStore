@@ -33,4 +33,15 @@ export class FormComponent {
     this.obj.SetData({name:this.FullName,total:this.Total})
     this.router.navigate(['/Success']);
   }
+  changefullName(input:string){
+ this.FullName=input;
+
+
+  }
+  changeaddress(input:string){
+   this.Address=input;
+  }
+  changecredit(input:string){
+  this.Credit=input;
+  }
 }

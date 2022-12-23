@@ -14,7 +14,7 @@
                 <div class="d-flex">
                   <div class="d-flex w-50 justify-content-between">
                       <p class="card-text">Amount :</p>
-                    <input type="number" class="form-control w-50" [(ngModel)]="item.count" (change)="DetectChenges()">
+                    <input type="number" min="0" class="form-control w-50" [(ngModel)]="item.count" (change)="DetectChenges()">
                   </div>
                 </div>
                 <div>

@@ -38,6 +38,7 @@ export class CartComponent implements OnInit {
 this.Cartproducts.splice(indexpro,1)
 localStorage.setItem("cart",JSON.stringify(this.Cartproducts))
 this.GetTotalPrice()
+alert("This product successfully removed from cart")
   }
 
 }

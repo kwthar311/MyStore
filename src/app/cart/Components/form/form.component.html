@@ -1,7 +1,7 @@
 <form #form="ngForm" (ngSubmit)="FormSubmit()" [formGroup]="SubmitForm">
     <div class="mb-3">
       <label for="FullName" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="FullName" name="FullName" [(ngModel)]="FullName"  formControlName="fullName">
+      <input type="text" class="form-control" id="FullName" name="FullName" [(ngModel)]="FullName"  formControlName="fullName" (ngModelChange)="changefullName($event)">
       <div *ngIf="SubmitForm.controls.fullName.touched && SubmitForm.controls.fullName.invalid"class="text-danger">
         <div *ngIf="SubmitForm.controls.fullName.errors?.['required']">
           Name is required.
@@ -13,7 +13,7 @@
     </div>
     <div class="mb-3">
       <label for="address" class="form-label">Address</label>
-      <input type="text" class="form-control" id="address" name="Address" [(ngModel)]="Address" formControlName="address">
+      <input type="text" class="form-control" id="address" name="Address" [(ngModel)]="Address" formControlName="address" (ngModelChange)="changeaddress($event)">
       <div *ngIf="SubmitForm.controls.address.touched && SubmitForm.controls.address.invalid"class="text-danger">
         <div *ngIf="SubmitForm.controls.address.errors?.['required']">
           Address is required.
@@ -25,7 +25,7 @@
     </div>
     <div class="mb-3">
         <label for="credit" class="form-label">Credit card number</label>
-        <input type="text" class="form-control" id="credit" name="Credit" [(ngModel)]="Credit" formControlName="credit">
+        <input type="text" class="form-control" id="credit" name="Credit" [(ngModel)]="Credit" formControlName="credit" (ngModelChange)="changecredit($event)">
         <div *ngIf="SubmitForm.controls.credit.touched && SubmitForm.controls.credit.invalid"class="text-danger">
           <div *ngIf="SubmitForm.controls.credit.errors?.['required']">
             Credit card number is required.
