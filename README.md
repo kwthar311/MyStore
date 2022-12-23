@@ -11,7 +11,7 @@ this project contain three modules<br>
 
  <h3>Cart module</h3><br>
 this module contain two folders<br>
-1-<h4>Components</h4><br>
+<h4>1-Components</h4><br>
   <span>&nbsp;</span>     cart component<br>
 this component responsible for display all products that exist in cart<br>
      <span>&nbsp;</span>    Success commponent<br>
@@ -19,11 +19,11 @@ this thi component responsible for success message the appear when customer clic
    <span>&nbsp;</span>      form component<br>
 this component responsible for displaying the form and its validations<br>
 
-2- <h4>services</h4><br>
+ <h4>2-services</h4><br>
 contain cart service that contain Addfunction that used in button Add which exist in listproduct and Add button in details page to Add product in cart <br>
 
 <h3>Product module</h3><br>
-1-<h4>Components</h4><br>
+<h4>1-Components</h4><br>
 productlist component<br>
       <span>&nbsp;</span>   this this component responsible for  displaying all products<br>
 product component<br>
@@ -31,16 +31,16 @@ product component<br>
 productdtail component<br>
      <span>&nbsp;</span>   this this component responsible for displaying product details when 
     you click on the product image to learn more about this product<br>
-2-<h4>services</h4><br>
+<h4>2-services</h4><br>
 product service<br>
    <span>&nbsp;</span>  this service toi read the product data from json file and return observable for subscribers
-3-<h4>Models</h4><br>
+<h4>3-Models</h4><br>
 product interface<br>
 
 <h3>Shared module</h3><br>
-1-<h4>Components</h4><br>
+<h4>1-Components</h4><br>
      <span>&nbsp;</span>  contain header component
-2-<h4>services</h4><br>
+<h4>2-services</h4><br>
   <span>&nbsp;</span>  contain success service to share data from different components
    
    
