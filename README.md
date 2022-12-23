@@ -3,45 +3,45 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 <br>
 
-#Brief Description
-this project contain three modules
-1- Cart module
-2-Product module
-3-Shared module
+<h2>Brief Description</h2><br>
+this project contain three modules<br>
+1- Cart module<br>
+2-Product module<br>
+3-Shared module<br>
 
-#Cart module 
-this module contain two folders
-1-Components:
-       cart component
-this component responsible for display all products that exist in cart
-       Success commponent
-this thi component responsible for success message the appear when customer click submit button
-       form component
-this component responsible for displaying the form and its validations
+ <h3>Cart module</h3><br>
+this module contain two folders<br>
+1-<h4>Components</h4><br>
+  <span>&nbsp;</span>     cart component<br>
+this component responsible for display all products that exist in cart<br>
+     <span>&nbsp;</span>    Success commponent<br>
+this thi component responsible for success message the appear when customer click submit button<br>
+   <span>&nbsp;</span>      form component<br>
+this component responsible for displaying the form and its validations<br>
 
-2-services:
-contain cart service that contain Addfunction that used in button Add which exist in listproduct and Add button in details page to Add product in cart 
+2- <h4>services</h4><br>
+contain cart service that contain Addfunction that used in button Add which exist in listproduct and Add button in details page to Add product in cart <br>
 
-#Product module
-1-Components:
-productlist component
-     this this component responsible for  displaying all products
-product component
-   this this component responsible for  the card product 
-productdtail component
-    this this component responsible for displaying product details when 
-    you click on the product image to learn more about this product
-2-services:
-product service
-   this service toi read the product data from json file and return observable for subscribers
-3-Models
-product interface
+<h3>Product module</h3><br>
+1-<h4>Components</h4><br>
+productlist component<br>
+      <span>&nbsp;</span>   this this component responsible for  displaying all products<br>
+product component<br>
+    <span>&nbsp;</span>  this this component responsible for  the card product <br>
+productdtail component<br>
+     <span>&nbsp;</span>   this this component responsible for displaying product details when 
+    you click on the product image to learn more about this product<br>
+2-<h4>services</h4><br>
+product service<br>
+   <span>&nbsp;</span>  this service toi read the product data from json file and return observable for subscribers
+3-<h4>Models</h4><br>
+product interface<br>
 
-#Shared module
-1-Components: 
-      contain header component
-2-services:
-   contain success service to share data from different components
+<h3>Shared module</h3><br>
+1-<h4>Components</h4><br>
+     <span>&nbsp;</span>  contain header component
+2-<h4>services</h4><br>
+  <span>&nbsp;</span>  contain success service to share data from different components
    
    
 
